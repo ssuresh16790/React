@@ -1,18 +1,19 @@
-import React from 'react'
 
-const authSignup = () => {
+
+const Signup = () => {
   return (
     <div>
-      <form>
-        <label>Enter Your Name : </label> 
-        <input type='text'></input>
-        <br/> <br/>
-        <label>Enter Your Email : </label> 
-        <input type='email'></input>
-        <br/>
-      </form>
-    </div>
+    <form>
+      <label htmlFor="text">Name : </label>
+      <input type="text" name="text" id="name" />
+      <br/> <br/>
+      <label htmlFor="email">Email : </label>
+      <input type="email" name="email" id="email" />
+      <br/> <br/>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
   )
 }
 
-export default authSignup
+export default Signup;
